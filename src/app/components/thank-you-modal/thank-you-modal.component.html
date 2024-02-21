@@ -1,0 +1,18 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left text-center">Thank You!</h4>
+  <button
+    type="button"
+    class="btn-close close pull-right"
+    aria-label="Close"
+    (click)="modalRef?.hide()"
+  >
+    <span aria-hidden="true" class="visually-hidden">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <h3 class="text-black mb-2">Vistor Name: {{visitorForm.vName}}</h3>
+  <h4 class="text-secondary">Visitor ID: {{visitorForm.idNumber}}</h4>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary ml-auto" (click)="modalRef?.hide()">Close</button>
+</div>

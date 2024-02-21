@@ -1,0 +1,34 @@
+<div class="visitor-table">
+  <div class="container-fluid">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Date</th>
+          <th>Visitor Name</th>
+          <th>Visitor Number</th>
+          <th>Visitor Company Name</th>
+          <th>Whoom To Meet</th>
+          <th>Purpose</th>
+          <!-- <th></th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of visitorsEntries; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ item.date }}</td>
+          <td>{{ item.vName }}</td>
+          <td>{{ item.vNumber }}</td>
+          <td>{{ item.vCompanyName }}</td>
+          <td>{{ item.whoomToMeet }}</td>
+          <td>{{ item.purpose }}</td>
+          <!-- <td>
+            <a href="#">
+              <button class="btn btn-danger btn-sm">Delete {{ i + 1}}</button>
+            </a>
+          </td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

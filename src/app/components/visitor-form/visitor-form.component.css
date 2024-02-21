@@ -1,0 +1,13 @@
+.container {
+  border-radius: 20px;
+}
+
+#idNumber {
+ pointer-events: none;
+ background-color: #d3d3d3 !important; 
+}
+
+.error small {
+  font-size: 12px;
+  font-weight: 400;
+}
