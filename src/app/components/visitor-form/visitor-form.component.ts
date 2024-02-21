@@ -33,7 +33,6 @@ export class VisitorFormComponent {
 
     if(this.visitorFormSubmittedData?.length > 0) {
       let lastEntry = this.visitorFormSubmittedData[this.visitorFormSubmittedData.length - 1 ];
-      console.log('lastEntry object ' + lastEntry);
       this.visitorForm.get('idNumber')?.setValue(lastEntry.idNumber + 1);
     }
   }

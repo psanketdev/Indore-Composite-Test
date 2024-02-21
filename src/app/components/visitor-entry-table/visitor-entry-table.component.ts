@@ -9,6 +9,5 @@ export class VisitorEntryTableComponent {
   @Input() visitorsEntries:any = [];
 
   ngOnInit(){
-    console.log(this.visitorsEntries);
   }
 }

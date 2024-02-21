@@ -11,9 +11,7 @@ export class ThankYouModalComponent implements OnInit {
   visitorForm?: any;
   constructor(public bsModalRef: BsModalRef){}
 
-  ngOnInit() {
-    console.log('Data passed to Modal 2:', this.visitorForm);
-    // this.visitorName = this.modalRef?.content.visitorDetails.  
+  ngOnInit() {  
   };
 
   closeModal() {
